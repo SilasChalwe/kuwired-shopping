@@ -1,66 +1,131 @@
-# Kuwired Shopping Website
 
-Kuwired is a Django-based shopping website application. This project aims to provide a seamless online shopping experience with an intuitive user interface and robust backend functionality.
+# Kuwired Shopping Website Application
+
+This is the official repository for the Kuwired Shopping Website Application, developed using Django.
 
 ## Features
 
-- User registration and authentication
-- Product listing and search
-- Shopping cart functionality
-- Order management
-- Payment integration
+- User-friendly interface for shopping.
+- Product management for administrators.
+- Secure user authentication and authorization.
+- Advanced search and filtering options.
+- Responsive design for optimal viewing on different devices.
 
 ## Installation
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/silaschalwe/kuwired.git
-    ```
+To install and run this project locally, follow these steps:
 
-2. Navigate to the project directory:
-    ```bash
-    cd kuwired
-    ```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/silaschalwe/kuwired.git
+   cd kuwired
+   ```
 
-3. Create a virtual environment and activate it:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
+2. **Create a virtual environment and activate it:**
+   ```bash
+   python -m venv env
+   source env/bin/activate  # On Windows, use `env\Scripts\activate`
+   ```
 
-4. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+3. **Install the required dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-5. Apply the migrations:
-    ```bash
-    python manage.py migrate
-    ```
+4. **Apply the migrations:**
+   ```bash
+   python manage.py migrate
+   ```
 
-6. Create a superuser to access the admin panel:
-    ```bash
-    python manage.py createsuperuser
-    ```
+5. **Create a superuser:**
+   ```bash
+   python manage.py createsuperuser
+   ```
 
-7. Run the development server:
-    ```bash
-    python manage.py runserver
-    ```
+6. **Run the development server:**
+   ```bash
+   python manage.py runserver
+   ```
 
-8. Open your web browser and go to `http://127.0.0.1:8000/` to see the website in action.
+7. **Access the application:**
+   Open your web browser and go to `http://127.0.0.1:8000/`.
+
+## Configuration
+
+Ensure you have a `.env` file in your project root with the following settings:
+
+```
+DEBUG=on
+SECRET_KEY=your_secret_key
+DATABASE_URL=your_database_url
+ALLOWED_HOSTS=127.0.0.1, .localhost
+```
+
+## Contributing
+
+1. **Fork the repository:**
+   Click the "Fork" button on the top right of the repository page.
+
+2. **Clone your forked repository:**
+   ```bash
+   git clone https://github.com/your-username/kuwired.git
+   cd kuwired
+   ```
+
+3. **Create a branch for your feature:**
+   ```bash
+   git checkout -b feature-name
+   ```
+
+4. **Make your changes and commit them:**
+   ```bash
+   git add .
+   git commit -m "Add some feature"
+   ```
+
+5. **Push your changes to your forked repository:**
+   ```bash
+   git push origin feature-name
+   ```
+
+6. **Create a pull request:**
+   Go to the original repository and click the "New Pull Request" button.
 
 ## License
 
-This project is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-You are free to:
+## .gitignore
 
-- **Share** — copy and redistribute the material in any medium or format
-- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
+```
+# Python
+*.pyc
+*.pyo
+__pycache__/
+env/
 
-The licensor cannot revoke these freedoms as long as you follow the license terms.
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__/
+local_settings.py
+db.sqlite3
+/static
 
-Under the following terms:
+# macOS
+.DS_Store
 
-- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+# Windows
+Thumbs.db
+ehthumbs.db
+```
+
+## Contact
+
+For any inquiries or support, please contact Silas Chalwe at mchalwesilas@gmail.com or silaschalwe@outlook.com.
+
+---
+
+Developed by Silas Chalwe. All rights reserved.
